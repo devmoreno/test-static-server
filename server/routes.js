@@ -13,7 +13,7 @@ var routes = {
             res.send("index.html");
         });
 
-        app.use('/api/integrations', require('./app/integration'));
+        app.use('/rest/alerts', require('./app/integration'));
 
         //Rest Api
         app.use('/api/things', require('./app/things')); //example rest api
